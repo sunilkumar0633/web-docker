@@ -10,6 +10,8 @@ RUN yum install -y httpd zip wget
 
 WORKDIR /var/www/html
 
+RUN rm -rf *
+
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page292/grandcoffee.zip
 
 RUN unzip grandcoffee.zip
