@@ -1,6 +1,6 @@
 [App]
 name = this is appstream repo
-baseurl = https://repo.almalinux.org/almalinux/9/AppStream/x86_64/os
+baseurl = https://repo.almalinux.org/almalinux/8/AppStream/x86_64/os
 enabled = 1
 gpgcheck = 0
 
