@@ -10,13 +10,13 @@ RUN yum install -y httpd zip wget
 
 WORKDIR /var/www/html
 
-RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page290/brainwave.zip
+RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page292/grandcoffee.zip
 
-RUN unzip brainwave.zip
+RUN unzip grandcoffee.zip
 
-RUN rm -f brainwave.zip &&\
-    cp -rf brainwave-html/* . &&\
-        rm -rf brainwave-html
+RUN rm -f grandcoffee.zip &&\
+    cp -rf html/* . &&\
+        rm -rf html
 EXPOSE 80
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
